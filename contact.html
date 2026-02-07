@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Code for Change</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            background: #1e293b;
+            background: var(--card-bg, #1e293b);
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+            display: block;
+        }
+
+        input,
+        textarea {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            margin: 10px 0px;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue, #38bdf8);
+            background: rgba(15, 23, 42, 0.8);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        label {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+        .explore:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="home-title" href="#">Code for Change</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Get in touch</h1>
+
+        <div class="contact-wrapper">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="How can we help?">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button class="explore" style="margin-top: 20px; cursor: pointer;">Submit Message</button>
+            </form>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.814291350812!2d85.31713437616654!3d27.707574725301872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908b873307b%3A0x6b0460368c8112a4!2sKathmandu!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider-row">
+    <section class="footer">
+        <h4 style="text-align: center;">Copyright © 2026 All rights reserved by Code for Change</h4>
+    </section>
+</body>
+
+</html>
